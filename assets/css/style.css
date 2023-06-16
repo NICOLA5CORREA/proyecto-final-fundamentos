@@ -23,7 +23,8 @@
   --text-color: hsl(0, 0%, 20%);
   --title-color: hsl(0, 0%, 10%);
   --bg-color: hsl(0, 0%, 100%);
-  --card-color: hsl(0, 0%, 90%);
+  --card-color: rgb(162, 152, 152);
+  background: rgb(243, 243, 246);
 
   /* Font and typography */
   --body-font: 'Open Sans', sans-serif;
@@ -283,6 +284,11 @@ button {
   color: var(--primary-color);
 }
 
+.image_ball {
+  width: 3rem;
+  height: 3 rem;
+  border-radius: 50%;
+}
 @media (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -385,6 +391,7 @@ button {
 .product__image {
   padding: var(--sp-1);
   background-color: var(--card-color);
+  border-radius: 10%;
 }
 
 .product__image img {
@@ -400,9 +407,12 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  background-color: var(--bg-color);
+  /* background-color: #BFC0C0; */
+  background: rgb(3,4,94);
+  background: linear-gradient(285deg, rgba(3,4,94,1) 6%, rgba(0,119,182,1) 33%, rgba(0,180,216,1) 61%);
   padding: var(--sp-1-5);
   min-height: 109px;
+  border-radius: 25% ;
 }
 
 .product__btn {
@@ -439,6 +449,7 @@ button {
 
 .product__title {
   grid-column:  span 3;
+  align-content: center;
 }
 
 /* ======= FOOTER ======== */
@@ -625,6 +636,8 @@ button {
   .header {
     top: 0;
     bottom: unset;
+    background: rgb(3,4,94);
+    background: linear-gradient(101deg, rgba(3,4,94,1) 6%, rgba(0,166,182,1) 33%, rgba(216,0,99,0.8492647058823529) 61%);
   }
 
   .nav__list {
